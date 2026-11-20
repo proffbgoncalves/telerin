@@ -1,0 +1,4 @@
+// Objetivo: comentário de bloco sem fechamento até o fim do arquivo
+// (seção 21). Esperado: erro léxico "comentário de bloco não fechado".
+canat valor = 1;
+/* comentario sem fim

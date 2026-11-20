@@ -1,0 +1,3 @@
+// Objetivo: string sem aspas de fechamento na mesma linha (seção 26.1).
+// Esperado: erro léxico "string não fechada na mesma linha".
+ela pet "Ola;

@@ -1,0 +1,3 @@
+// Objetivo: separadores Unicode fora de strings e comentários são erro
+// léxico (seção 21). Esperado: erro "caractere inválido U+00A0".
+canat valor = 1;

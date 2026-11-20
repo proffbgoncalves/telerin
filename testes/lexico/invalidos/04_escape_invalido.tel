@@ -1,0 +1,3 @@
+// Objetivo: só são permitidos os escapes \n \r \t \" \\ (seção 5.2).
+// Esperado: erro léxico "escape inválido '\q'".
+ela pet "Ola\q";

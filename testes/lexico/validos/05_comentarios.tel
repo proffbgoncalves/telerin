@@ -1,0 +1,8 @@
+// Objetivo: comentários e espaços são descartados, preservando linha e
+// coluna (seção 21). Esperado: apenas os tokens fora dos comentários.
+canat a = 1; // comentário de linha com "aspas" que não abrem string
+/* comentário de bloco
+   em várias linhas, com // e "aspas" */ canat b = 2;
+/* termina no primeiro fechamento */ canat c = 3;
+	canat d = 4;	// tabulações contam como uma coluna
+ela pet "/* isto é texto, não comentário */";

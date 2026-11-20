@@ -1,0 +1,3 @@
+// Objetivo: o candidato numérico inteiro é rejeitado (seção 26.1); 0b102
+// não pode virar 0b10 e 2. Esperado: erro léxico "numeral inválido '0b102'".
+canat_min valor = 0b102;

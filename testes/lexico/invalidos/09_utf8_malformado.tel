@@ -1,0 +1,3 @@
+// Objetivo: UTF-8 malformado é erro de leitura, sem substituição
+// silenciosa (seção 21). Esperado: "UTF-8 malformado na linha 3".
+canat valor = 1; �
