@@ -76,3 +76,55 @@ INPUT_PULLUP        : 'leper_duimë' ;
 OUTPUT              : 'leper_car' ;
 ANALOG_INPUT        : 'duinë_mapa' ;
 PWM_OUTPUT          : 'duinë_car' ;
+
+// Literais
+
+INT_LITERAL
+    : '0'
+    | [1-9] [0-9]*
+    | '0b' [01]+
+    | '0x' [0-9a-fA-F]+
+    ;
+
+FLOAT_LITERAL
+    : PARTE_INTEIRA '.' [0-9]+ EXPOENTE?
+    | PARTE_INTEIRA EXPOENTE
+    ;
+
+STRING_LITERAL  : '"' CARACTERE_STRING* '"' ;
+
+fragment PARTE_INTEIRA      : '0' | [1-9] [0-9]* ;
+fragment EXPOENTE           : [eE] [+-]? [0-9]+ ;
+fragment CARACTERE_STRING   : ~["\\\r\n\u0000] | ESCAPE ;
+fragment ESCAPE             : '\\' [nrt"\\] ;
+
+// Operadores e delimitadores
+
+PLUS        : '+' ;
+MINUS       : '-' ;
+STAR        : '*' ;
+SLASH       : '/' ;
+PERCENT     : '%' ;
+
+LE          : '<=' ;
+GE          : '>=' ;
+EQ          : '==' ;
+NE          : '!=' ;
+LT          : '<' ;
+GT          : '>' ;
+
+ASSIGN      : '=' ;
+
+LPAREN      : '(' ;
+RPAREN      : ')' ;
+LBRACE      : '{' ;
+RBRACE      : '}' ;
+LBRACKET    : '[' ;
+RBRACKET    : ']' ;
+SEMI        : ';' ;
+COMMA       : ',' ;
+COLON       : ':' ;
+
+// Identificadores
+
+ID          : [\p{L}_] [\p{L}\p{M}\p{Nd}_]* ;
