@@ -1,0 +1,2 @@
+# Os testes dependem dos bytes exatos (BOM, CR, CRLF, U+0000, UTF-8 malformado).
+*.tel -text
