@@ -5,7 +5,7 @@ options { tokenVocab = TelerinLexer; }
 // Programa
 
 programa
-    : blocoHauda declaracaoGlobal* blocoMinya blocoVola EOF
+    : blocoHauda declaracaoGlobal* funcao* blocoMinya blocoVola EOF
     ;
 
 blocoHauda
@@ -86,7 +86,19 @@ tipoRecurso
     | PWM_OUTPUT
     ;
 
-// Blocos
+// Funções e blocos
+
+funcao
+    : FUNCTION tipo ID LPAREN listaParametros? RPAREN bloco
+    ;
+
+listaParametros
+    : parametro (COMMA parametro)*
+    ;
+
+parametro
+    : tipo ID
+    ;
 
 bloco
     : IN LBRACE itemBloco* RBRACE
@@ -94,6 +106,52 @@ bloco
 
 itemBloco
     : declaracaoLocal
+    | comando
+    ;
+
+// Comandos
+
+comando
+    : atribuicao SEMI
+    | acao SEMI
+    | inicioSerial
+    | comandoInterrupcao
+    | comandoContinuacao
+    | comandoRetorno
+    ;
+
+atribuicao
+    : alvo ASSIGN expressao
+    ;
+
+alvo
+    : ID (LBRACKET expressao RBRACKET)?
+    ;
+
+acao
+    : ACTION SERIAL_PRINT expressao
+    | ACTION SERIAL_PRINTLN expressao
+    | ACTION SERIAL_WRITE expressao
+    | ACTION DELAY expressao
+    | ACTION DIGITAL_WRITE expressao TO ID
+    | ACTION ANALOG_WRITE expressao TO ID
+    | ACTION chamada
+    ;
+
+inicioSerial
+    : SERIAL_BEGIN INT_LITERAL SEMI
+    ;
+
+comandoInterrupcao
+    : BREAK SEMI
+    ;
+
+comandoContinuacao
+    : CONTINUE SEMI
+    ;
+
+comandoRetorno
+    : RETURN expressao? SEMI
     ;
 
 // Expressões, da menor para a maior precedência
