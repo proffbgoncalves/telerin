@@ -115,6 +115,12 @@ comando
     : atribuicao SEMI
     | acao SEMI
     | inicioSerial
+    | condicional
+    | selecao
+    | lacoEnquanto
+    | lacoPara
+    | lacoFaca
+    | lacoContado
     | comandoInterrupcao
     | comandoContinuacao
     | comandoRetorno
@@ -140,6 +146,50 @@ acao
 
 inicioSerial
     : SERIAL_BEGIN INT_LITERAL SEMI
+    ;
+
+// "han ID" é a forma de presença: né_cava mapa han valor cava { }
+condicional
+    : IF expressao (TO ID)? bloco (ELSE bloco)?
+    ;
+
+selecao
+    : SWITCH expressao IN LBRACE caso+ casoPadrao? RBRACE
+    ;
+
+caso
+    : CASE expressao bloco
+    ;
+
+casoPadrao
+    : ELSE bloco
+    ;
+
+lacoEnquanto
+    : WHILE expressao bloco
+    ;
+
+lacoPara
+    : FOR LPAREN inicioPara? SEMI expressao? SEMI atualizacaoPara? RPAREN bloco
+    ;
+
+inicioPara
+    : tipo ID ASSIGN expressao
+    | atribuicao
+    | ACTION chamada
+    ;
+
+atualizacaoPara
+    : atribuicao
+    | ACTION chamada
+    ;
+
+lacoFaca
+    : DO bloco WHILE expressao SEMI
+    ;
+
+lacoContado
+    : REPEAT expressao bloco
     ;
 
 comandoInterrupcao
