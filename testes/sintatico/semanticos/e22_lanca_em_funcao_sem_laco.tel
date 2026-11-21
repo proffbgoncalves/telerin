@@ -1,0 +1,10 @@
+// Objetivo: lanca dentro de função sem laço local (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+car aba_car f() cava {
+    lanca;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {}

@@ -1,0 +1,7 @@
+// Objetivo: a escrita em pino termina em han destino (seção 10).
+// Esperado: erro sintático em "128" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    ela car_duinë motor 128;
+}

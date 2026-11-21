@@ -1,0 +1,7 @@
+// Objetivo: lanca não tem parênteses (seção 16).
+// Esperado: erro sintático em "(" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    lanca();
+}

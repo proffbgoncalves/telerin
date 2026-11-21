@@ -1,0 +1,13 @@
+// Objetivo: car_min duplicado após avaliação constante (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    canat x = 1;
+    car_heco x cava {
+        car_min 1 cava {}
+        car_min 0 + 1 cava {}
+    }
+}

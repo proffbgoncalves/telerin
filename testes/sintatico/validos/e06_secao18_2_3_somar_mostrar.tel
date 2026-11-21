@@ -1,0 +1,15 @@
+// Objetivo: exemplo completo de função e procedimento da seção 18.2.3.
+// Esperado: árvore sem erro.
+hauda cava {} // Este exemplo não declara recursos de pinos.
+car canat_min somar(canat_min primeiro, canat_min segundo) cava {
+    auta primeiro + segundo; // Retorna a soma.
+}
+car aba_car mostrar(canat_min valor) cava {
+    ela pet_lanca valor; // Imprime o argumento e LF.
+}
+minya cava {
+    minya_lambë 9600; // Inicializa a serial antes de mostrar.
+    canat_min resultado = somar(2, 3); // Chama a função e recebe 5.
+    ela mostrar(resultado); // Passa 5 ao procedimento.
+}
+vola cava {} // Nenhuma ação adicional é repetida.

@@ -1,0 +1,3 @@
+// Objetivo: arquivo sem minya; o trecho é o arquivo inteiro (seção 26.2).
+// Esperado: erro sintático.
+hauda cava {} vola cava {}

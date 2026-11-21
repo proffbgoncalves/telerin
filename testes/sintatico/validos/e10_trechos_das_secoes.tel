@@ -1,0 +1,101 @@
+// Objetivo: trechos válidos das seções 6 a 20 e do §22.8 (canat casa, 0xE+1, abá né, condição omitida em vola_delia, lista vetorial como argumento e retorno), inseridos num programa completo.
+// Esperado: árvore sem erro.
+hauda cava {
+    leper_car led = leper(13) : dammë;
+    leper_mapa botao = leper(2);
+    duinë_mapa sensor = leper_duinë(0);
+    duinë_car motor = leper(3) : 0;
+}
+glanna canat_min limite = 10;
+glanna canat contador = 100;
+glanna lambë mostrar = "Ola";
+canat_min valor = 255;
+né_lambë limiteLogico = né;
+car canat somar(canat limite, canat valor) cava {
+    auta limite + valor;
+}
+car aba_car alterar(canat_min valor) cava {
+    valor = 9; // Altera somente a cópia local.
+}
+car aba_car preparar() cava {}
+car aba_car avancar() cava {
+    auta;
+}
+car [canat_min; 2] par() cava {
+    auta [1, 2];
+}
+car aba_car usarVetor([canat_min; 3] dados) cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    canat contadorLocal = 10;
+    canat_min valorLocal = 255;
+    né_lambë limite2 = né;
+    duimë_dammë nivel = duimë;
+    lúmë intervalo = lúmë(1, 2);
+    contadorLocal = contadorLocal + 1;
+    contadorLocal = 10 + 5 * 2;
+    limite2 = contadorLocal >= 10;
+    limite2 = contadorLocal > 0 ye contadorLocal < 20;
+    limite2 = abá limite2;
+    limite2 = abá né;
+    limite2 = aba_né;
+    canat_min r1 = ye_min<8>(0b00001100, 0b00001010);
+    canat_min r2 = heco_min<8>(0b00001100, 0b00001010);
+    canat_min r3 = heco_aba<8>(0b00001100, 0b00001010);
+    canat_min r4 = abá_min<8>(0b00001111);
+    canat_min r5 = þarma_min<8>(0b00000011, 1);
+    canat_min r6 = forma_min<8>(0b00001010, 1);
+    canat_min r7 = forma_min<8>(0x80, 7);
+    canat x = 0xE+1;
+    duinë real = 2.5e-2 + 1e3 + 1e+2;
+    canat truncado = canat(-2.9);
+    canat_min convertido = canat_min(255.9);
+    canat casa = 1;
+    ela pet "Ola";
+    ela pet_lanca contadorLocal;
+    ela pet_min 65;
+    ela car_duimë duimë han led;
+    ela car_duinë 128 han motor;
+    ela lúmë_dammë lúmë(1, 1);
+    ela alterar(3);
+    ela somar(2, 3);
+    duimë_dammë lido = mapa_duimë botao;
+    canat_min<16> analogico = mapa_duinë sensor;
+    né_lambë apertado = mapa_duimë botao == dammë;
+    lúmë<lúmë_min> instante = lúmë_min;
+    né_cava mapa han recebido cava {
+        ela pet_min recebido;
+    } heco cava {
+    }
+    né_cava contadorLocal > 10 cava {
+        ela pet_lanca 2;
+    } heco cava {
+        né_cava contadorLocal == 10 cava {
+            ela pet_lanca 1;
+        } heco cava {
+            ela pet_lanca 0;
+        }
+    }
+    car_heco contadorLocal cava {
+        car_min 1 cava { ela car_duimë duimë han led; }
+        heco cava { ela car_duimë dammë han led; }
+    }
+    vola_delia (canat_min i = 0; i < 6; i = i + 1) cava {
+        né_cava i == 2 cava { vola_minya; }
+        né_cava i == 4 cava { lanca; }
+        ela pet_lanca i;
+    }
+    vola_delia (ela preparar(); limite2; ela avancar()) cava {}
+    vola_delia (; ; ela avancar()) cava { lanca; }
+    vola_delia (;;) cava { lanca; }
+    [canat_min; 3] valores = [10, 20, 30];
+    valores[0] = 15;
+    ela pet_lanca valores[1];
+    ela usarVetor([1, 2, 3]);
+    vola_canat 3 cava { ela pet_lanca "Ola"; }
+    vola_car cava {
+        contadorLocal = contadorLocal + 1;
+    } vola_né contadorLocal < 3;
+}

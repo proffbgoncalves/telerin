@@ -1,0 +1,7 @@
+// Objetivo: ela não aceita chamada entre parênteses.
+// Esperado: erro sintático em "(" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    ela (mostrar(3));
+}

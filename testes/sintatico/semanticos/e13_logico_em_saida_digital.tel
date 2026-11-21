@@ -1,0 +1,11 @@
+// Objetivo: ela car_duimë né han led; (seção 26.3). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {
+    leper_car led = leper(13) : dammë;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    ela car_duimë né han led;
+}

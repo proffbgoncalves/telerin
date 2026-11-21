@@ -1,0 +1,9 @@
+// Objetivo: lanca( ); (seção 26.2).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    lanca( );
+}

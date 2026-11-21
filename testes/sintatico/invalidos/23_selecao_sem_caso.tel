@@ -1,0 +1,9 @@
+// Objetivo: car_heco exige pelo menos um car_min (seção 12).
+// Esperado: erro sintático em "heco" na linha 7.
+hauda cava {}
+minya cava {}
+vola cava {
+    car_heco 1 cava {
+        heco cava {}
+    }
+}

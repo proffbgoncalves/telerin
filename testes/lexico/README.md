@@ -5,7 +5,7 @@ Cada arquivo começa com um comentário que diz o objetivo do teste e o resultad
 Para rodar um teste:
 
 ```bash
-java -jar target/telerin.jar testes/lexico/validos/02_palavras_reservadas.tel
+java -jar target/telerin.jar --tokens testes/lexico/validos/02_palavras_reservadas.tel
 ```
 
 ## Válidos

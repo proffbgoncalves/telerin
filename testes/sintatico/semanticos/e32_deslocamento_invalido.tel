@@ -1,0 +1,10 @@
+// Objetivo: þarma_min<8>(128, 1) e forma_min<8>(1, 8) (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    canat_min a = þarma_min<8>(128, 1);
+    canat_min b = forma_min<8>(1, 8);
+}

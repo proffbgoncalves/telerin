@@ -1,0 +1,9 @@
+// Objetivo: PWM no pino 22 (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {
+    duinë_car motor = leper(22) : 0;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {}

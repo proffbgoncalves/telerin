@@ -1,0 +1,6 @@
+// Objetivo: função sem cava (seção 26.2).
+// Esperado: erro sintático.
+hauda cava {}
+car aba_car f() {}
+minya cava {}
+vola cava {}

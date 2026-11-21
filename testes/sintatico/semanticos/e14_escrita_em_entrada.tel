@@ -1,0 +1,11 @@
+// Objetivo: ela car_duimë duimë han botao; com botao de entrada (seção 26.3). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {
+    leper_mapa botao = leper(2);
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    ela car_duimë duimë han botao;
+}

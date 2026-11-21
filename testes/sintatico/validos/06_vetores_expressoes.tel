@@ -1,0 +1,46 @@
+// Objetivo: vetores (seção 20), precedência e associatividade (seção 9),
+// unários encadeados, conversões (seção 22.3), operações sobre bits
+// (seção 9.1), duração (seção 10.5) e leituras sem parênteses (seção 10.4).
+// Esperado: árvore sem erro; 10 + 5 * 2 agrupa 5 * 2 primeiro.
+hauda cava {
+    leper_duimë botao = leper(2);
+    duinë_mapa sensor = leper_duinë(3);
+    duinë_car motor = leper(9) : 0;
+}
+
+[canat; 3] valores = [10, 20, 30];
+lúmë<lúmë_min> marca;
+
+minya cava {
+    minya_lambë 9600;
+}
+
+vola cava {
+    canat x = 10 + 5 * 2;
+    canat y = (10 + 5) * 2 - 3 % 2;
+    canat z = - -x;
+    né_lambë ok = x > 0 ye x < 20;
+    né_lambë pressionado = mapa_duimë botao == dammë;
+    né_lambë negado = abá abá ok;
+    canat leitura = mapa_duinë sensor;
+    canat recebido = mapa;
+    marca = lúmë_min;
+
+    valores[0] = valores[1] + valores[2];
+    valores[x - 1] = 0;
+
+    canat_min baixo = canat_min<8>(x);
+    canat largo = canat(baixo);
+    duinë media = duinë(x) / 2.0e1;
+
+    canat_min mascara = ye_min<8>(baixo, 0x0F);
+    canat_min uniao = heco_min<8>(baixo, 0b1010);
+    canat_min troca = heco_aba<8>(baixo, 255);
+    canat_min invertido = abá_min<8>(baixo);
+    canat_min esquerda = þarma_min<8>(baixo, 1);
+    canat_min direita = forma_min<8>(baixo, 2);
+
+    ela car_duinë canat_min(leitura / 4) han motor;
+    ela lúmë_dammë lúmë(3, 2);
+    ela pet_min 10;
+}

@@ -1,0 +1,9 @@
+// Objetivo: mapa_duinë leper_duinë(0) (seção 10.4).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    canat_min<16> v = mapa_duinë leper_duinë(0);
+}

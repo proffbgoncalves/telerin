@@ -1,0 +1,7 @@
+// Objetivo: mapa_duimë recebe um identificador, sem parênteses (seção 10.4).
+// Esperado: erro sintático em "(" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    né_lambë r = mapa_duimë(botao) == dammë;
+}

@@ -1,0 +1,7 @@
+// Objetivo: han vem depois do valor, não logo após ela.
+// Esperado: erro sintático em "han" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    ela han led car_duimë duimë;
+}

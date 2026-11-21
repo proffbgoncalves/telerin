@@ -1,0 +1,6 @@
+// Objetivo: tokens após o fechamento de vola (seção 26.2).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {}
+vola cava {}
+ela pet "x";

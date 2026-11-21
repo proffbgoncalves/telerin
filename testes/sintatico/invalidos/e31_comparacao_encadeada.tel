@@ -1,0 +1,9 @@
+// Objetivo: contador < limite < 10 (seção 9).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    né_lambë r = contador < limite < 10;
+}

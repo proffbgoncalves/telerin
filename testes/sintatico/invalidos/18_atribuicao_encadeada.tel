@@ -1,0 +1,7 @@
+// Objetivo: atribuição é comando, não expressão (seção 9).
+// Esperado: erro sintático no segundo "=" da linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    x = y = 1;
+}

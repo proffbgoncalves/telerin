@@ -1,0 +1,9 @@
+// Objetivo: caso de car_heco sem cava (seção 26.2).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    car_heco 1 cava { car_min 1 {} }
+}

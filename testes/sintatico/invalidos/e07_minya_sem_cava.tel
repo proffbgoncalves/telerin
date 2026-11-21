@@ -1,0 +1,5 @@
+// Objetivo: minya {} sem o marcador cava (seções 4.1 e 26.2).
+// Esperado: erro sintático.
+hauda cava {}
+minya {}
+vola cava {}

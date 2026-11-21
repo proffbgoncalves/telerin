@@ -1,0 +1,4 @@
+// Objetivo: arquivo sem vola (seção 26.2).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {}

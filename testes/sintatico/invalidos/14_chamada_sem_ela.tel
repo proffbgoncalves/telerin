@@ -1,0 +1,7 @@
+// Objetivo: chamada como comando exige ela (seção 10).
+// Esperado: erro sintático em "(" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    mostrar(5);
+}

@@ -1,0 +1,7 @@
+// Objetivo: hauda contém somente declarações de recurso (seção 19).
+// Esperado: erro sintático em "canat" na linha 4.
+hauda cava {
+    canat x = 1;
+}
+minya cava {}
+vola cava {}

@@ -1,0 +1,7 @@
+// Objetivo: lúmë(n, d) só aceita numerais (seção 10.5).
+// Esperado: erro sintático em "x" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    ela lúmë_dammë lúmë(x, 2);
+}

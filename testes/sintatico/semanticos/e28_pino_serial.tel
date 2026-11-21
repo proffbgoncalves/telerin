@@ -1,0 +1,9 @@
+// Objetivo: pino 1 usado com serial ativa (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {
+    leper_car tx = leper(1) : dammë;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {}

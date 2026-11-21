@@ -13,9 +13,14 @@ import java.nio.charset.CodingErrorAction;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import org.antlr.v4.runtime.BaseErrorListener;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.RecognitionException;
+import org.antlr.v4.runtime.Recognizer;
 import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.misc.ParseCancellationException;
+import org.antlr.v4.runtime.tree.ParseTree;
 
 public final class Main {
 
@@ -26,13 +31,20 @@ public final class Main {
 
     private static final String EXEMPLO = "/exemplo.tel";
 
+    private enum Modo { ARVORE, LISP, TOKENS }
+
     private Main() {
     }
 
     public static void main(String[] args) {
+        Modo modo = Modo.ARVORE;
         String caminho = null;
         for (String arg : args) {
-            if (arg.equals("--tokens")) {
+            if (arg.equals("--tokens") || arg.equals("--lisp")) {
+                if (modo != Modo.ARVORE) {
+                    uso();
+                }
+                modo = arg.equals("--tokens") ? Modo.TOKENS : Modo.LISP;
                 continue;
             }
             if (arg.startsWith("--") || caminho != null) {
@@ -58,15 +70,52 @@ public final class Main {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         tokens.fill();
 
-        imprimirTokens(tokens);
+        if (modo == Modo.TOKENS) {
+            imprimirTokens(tokens);
+        }
         if (errosLexicos.getTotal() > 0) {
             ERR.printf("%d erro(s) léxico(s) em %s%n", errosLexicos.getTotal(), nome);
             System.exit(1);
         }
+        if (modo == Modo.TOKENS) {
+            return;
+        }
+
+        TelerinParser parser = new TelerinParser(tokens);
+        ColetorErros errosSintaticos = new ColetorErros(nome, "sintático", ERR);
+        parser.removeErrorListeners();
+        parser.addErrorListener(errosSintaticos);
+        parser.addErrorListener(new PararNoPrimeiroErro());
+        parser.setErrorHandler(new EstrategiaErros());
+        ParseTree arvore;
+        try {
+            arvore = parser.programa();
+        } catch (ParseCancellationException e) {
+            arvore = null;
+        }
+
+        if (arvore == null || errosSintaticos.getTotal() > 0) {
+            ERR.printf("erro sintático em %s; análise interrompida%n", nome);
+            System.exit(1);
+        }
+        if (modo == Modo.LISP) {
+            OUT.println(arvore.toStringTree(parser));
+        } else {
+            new ArvoreSintatica(parser, OUT).imprimir(arvore);
+        }
+    }
+
+    // Para no primeiro erro sintático: os seguintes costumam ser efeito em cascata.
+    private static final class PararNoPrimeiroErro extends BaseErrorListener {
+        @Override
+        public void syntaxError(Recognizer<?, ?> recognizer, Object simboloOfensor,
+                int linha, int coluna, String mensagem, RecognitionException e) {
+            throw new ParseCancellationException(mensagem, e);
+        }
     }
 
     private static void uso() {
-        ERR.println("uso: Main [--tokens] [arquivo.tel]");
+        ERR.println("uso: Main [--tokens | --lisp] [arquivo.tel]");
         System.exit(2);
     }
 

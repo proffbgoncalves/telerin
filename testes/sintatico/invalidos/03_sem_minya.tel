@@ -1,0 +1,4 @@
+// Objetivo: o programa exige minya (seção 4).
+// Esperado: erro sintático em "vola" na linha 4.
+hauda cava {}
+vola cava {}

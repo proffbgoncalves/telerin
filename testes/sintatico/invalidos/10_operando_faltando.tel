@@ -1,0 +1,7 @@
+// Objetivo: o operador + precisa de operando à direita.
+// Esperado: erro sintático em ";" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    canat r = 1 + ;
+}

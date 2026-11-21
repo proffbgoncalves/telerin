@@ -1,0 +1,12 @@
+// Objetivo: procedimento usado como valor (seção 18.2.6). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+car aba_car mostrar(canat_min valor) cava {
+    ela pet_lanca valor;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    canat_min resultado = mostrar(5);
+}

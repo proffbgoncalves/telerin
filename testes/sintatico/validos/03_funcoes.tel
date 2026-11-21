@@ -1,0 +1,38 @@
+// Objetivo: funções com retorno, procedimentos aba_car (seções 17 e 18),
+// listas de parâmetros vazias e com vários itens, parâmetro de capacidade
+// (tipo de recurso), auta com e sem expressão e chamadas com ela.
+// Esperado: árvore sem erro.
+hauda cava {
+    leper_car led = leper(13) : dammë;
+}
+
+car canat somar(canat a, canat b) cava {
+    auta a + b;
+}
+
+car né_lambë par(canat n) cava {
+    auta n % 2 == 0;
+}
+
+car aba_car piscar(leper_car saida, lúmë espera) cava {
+    ela car_duimë duimë han saida;
+    ela lúmë_dammë espera;
+    ela car_duimë dammë han saida;
+    auta;
+}
+
+car aba_car avisar() cava {
+    ela pet_lanca "pronto";
+}
+
+minya cava {
+    minya_lambë 115200;
+    ela avisar();
+}
+
+vola cava {
+    canat total = somar(2, 3);
+    né_cava par(total) cava {
+        ela piscar(led, lúmë(1, 2));
+    }
+}

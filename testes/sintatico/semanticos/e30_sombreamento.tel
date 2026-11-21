@@ -1,0 +1,10 @@
+// Objetivo: declaração local repete nome visível (seção 22.2). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+glanna canat valor = 2;
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    canat valor = 1;
+}

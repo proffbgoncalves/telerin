@@ -1,0 +1,29 @@
+// Objetivo: erros que só a análise semântica detecta (tipo, escopo, faixa,
+// nome reservado, vetor vazio, posição de minya_lambë e uso de lanca fora
+// de laço). A sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore, sem erro sintático.
+hauda cava {
+    leper_mapa sensor = leper(99) : duimë;
+}
+
+aba_car nada;
+canat __interno = 1;
+[canat; 0] vazio = [];
+canat_min grande = 300;
+né_lambë flag = 5;
+
+car canat sem_retorno() cava {
+    auta;
+}
+
+minya cava {
+    canat x = naoDeclarado + 1;
+    lambë texto = 1 + "a";
+}
+
+vola cava {
+    minya_lambë 9600;
+    lanca;
+    sem_retorno = 3;
+    ela car_duimë duimë han sensor;
+}

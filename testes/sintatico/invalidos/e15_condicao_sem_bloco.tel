@@ -1,0 +1,9 @@
+// Objetivo: né_cava né ela pet_lanca 1; (seção 26.2).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    né_cava né ela pet_lanca 1;
+}

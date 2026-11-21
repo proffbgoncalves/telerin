@@ -1,0 +1,5 @@
+// Objetivo: programa do paralelo com Arduino da seção 4.2.
+// Esperado: árvore sem erro.
+hauda cava {}
+minya cava { minya_lambë 9600; }
+vola cava { ela lúmë_dammë lúmë(1, 1); }

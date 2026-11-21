@@ -1,0 +1,5 @@
+// Objetivo: minya antes de hauda (seção 26.2).
+// Esperado: erro sintático.
+minya cava {}
+hauda cava {}
+vola cava {}

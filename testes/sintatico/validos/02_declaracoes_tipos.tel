@@ -1,0 +1,38 @@
+// Objetivo: recursos dos cinco tipos (seção 19), constantes (seção 7),
+// globais com e sem inicializador e locais com inicializador (seção 8),
+// todos os tipos da seção 6, larguras e vetores.
+// Esperado: árvore sem erro.
+hauda cava {
+    leper_car led = leper(13) : dammë;
+    leper_mapa sensor = leper(7);
+    leper_duimë botao = leper(2);
+    duinë_mapa potenciometro = leper_duinë(0);
+    duinë_car motor = leper(9) : 0;
+}
+
+glanna canat LIMITE = 100;
+glanna lambë SAUDACAO = "Mae govannen";
+canat contador;
+canat<16> medio = 0;
+canat_min<8> pequeno;
+canat_min brilho = 128;
+duinë temperatura = 21.5;
+né_lambë ligado = aba_né;
+duimë_dammë nivel = duimë;
+lúmë intervalo = lúmë(1, 2);
+lúmë<lúmë_min> inicio;
+mapa_min recebido;
+[canat_min; 3] cores = [255, 128, 0];
+[duinë; 2] pesos;
+
+minya cava {
+    minya_lambë 9600;
+    canat local = 5;
+    glanna canat_min PASSO = 1;
+    [canat; 4] tabela = [1, 2, 3, 4];
+}
+
+vola cava {
+    canat dobro = contador * 2;
+    contador = dobro;
+}

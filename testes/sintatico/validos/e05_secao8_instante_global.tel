@@ -1,0 +1,8 @@
+// Objetivo: global lúmë<lúmë_min> sem inicializador, da seção 8.
+// Esperado: árvore sem erro.
+hauda cava {}
+lúmë<lúmë_min> instanteInicial;
+minya cava {
+    instanteInicial = lúmë_min;
+}
+vola cava {}

@@ -1,0 +1,11 @@
+// Objetivo: escrita digital sem han (seção 22.8).
+// Esperado: erro sintático.
+hauda cava {
+    leper_car led = leper(13) : dammë;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    ela car_duimë duimë led;
+}

@@ -1,0 +1,11 @@
+// Objetivo: ela han led car_duimë duimë; (seções 10.4 e 26.2).
+// Esperado: erro sintático.
+hauda cava {
+    leper_car led = leper(13) : dammë;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    ela han led car_duimë duimë;
+}

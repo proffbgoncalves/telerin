@@ -1,0 +1,53 @@
+// Objetivo: né_cava com e sem heco, aninhado (seção 11), forma de presença
+// com han (seção 10.3) e car_heco com vários casos e heco por último
+// (seção 12).
+// Esperado: árvore sem erro.
+hauda cava {
+    leper_car led = leper(13) : dammë;
+}
+
+canat modo = 0;
+mapa_min recebido;
+
+minya cava {
+    minya_lambë 9600;
+}
+
+vola cava {
+    né_cava mapa han recebido cava {
+        ela pet_lanca recebido;
+    } heco cava {
+        ela pet_lanca "nada";
+    }
+
+    né_cava modo > 0 ye modo < 3 cava {
+        né_cava modo == 1 cava {
+            ela car_duimë duimë han led;
+        } heco cava {
+            ela car_duimë dammë han led;
+        }
+    }
+
+    né_cava (modo != 0) heco_ye abá (modo >= 5) cava {
+        modo = 0;
+    }
+
+    car_heco modo cava {
+        car_min 0 cava {
+            ela pet "zero";
+        }
+        car_min 1 cava {
+            ela pet "um";
+            lanca;
+        }
+        heco cava {
+            ela pet "outro";
+        }
+    }
+
+    car_heco modo + 1 cava {
+        car_min 2 cava {
+            modo = 2;
+        }
+    }
+}

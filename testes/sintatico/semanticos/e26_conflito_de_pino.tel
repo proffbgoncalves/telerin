@@ -1,0 +1,10 @@
+// Objetivo: leper(54) e leper_duinë(0) no mesmo pino físico (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {
+    leper_mapa a = leper(54);
+    duinë_mapa b = leper_duinë(0);
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {}

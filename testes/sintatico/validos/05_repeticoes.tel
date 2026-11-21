@@ -1,0 +1,47 @@
+// Objetivo: as quatro repetições (seções 13 a 15): vola_né, vola_delia
+// com as três partes e com as partes vazias, vola_car ... vola_né; e
+// vola_canat, além de lanca e vola_minya (seção 16).
+// Esperado: árvore sem erro.
+hauda cava {}
+
+car aba_car avancar() cava {
+    ela pet ".";
+}
+
+minya cava {
+    minya_lambë 9600;
+}
+
+vola cava {
+    canat i = 0;
+    vola_né i < 10 cava {
+        i = i + 1;
+        né_cava i == 5 cava {
+            vola_minya;
+        }
+    }
+
+    vola_delia (canat j = 0; j < 3; j = j + 1) cava {
+        ela pet_lanca j;
+    }
+
+    vola_delia (i = 0; i < 2; ela avancar()) cava {
+        i = i + 1;
+    }
+
+    vola_delia (ela avancar(); ; ) cava {
+        lanca;
+    }
+
+    vola_delia (;;) cava {
+        lanca;
+    }
+
+    vola_car cava {
+        i = i - 1;
+    } vola_né i > 0;
+
+    vola_canat 3 cava {
+        ela lúmë_dammë lúmë(1, 4);
+    }
+}

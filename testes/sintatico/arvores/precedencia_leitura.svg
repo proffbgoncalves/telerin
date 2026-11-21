@@ -1,0 +1,94 @@
+<line x1="159.25" y1="7.5" x2="159.25" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="159.25" y1="39.5" x2="159.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="159.25" y1="71.5" x2="159.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="159.25" y1="103.5" x2="59.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="59.25" y1="135.5" x2="59.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="59.25" y1="167.5" x2="59.25" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="59.25" y1="199.5" x2="59.25" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="59.25" y1="231.5" x2="59.25" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="59.25" y1="263.5" x2="32.0" y2="288.0" style="stroke:black; stroke-width:1px;" />
+<line x1="59.25" y1="263.5" x2="86.5" y2="288.0" style="stroke:black; stroke-width:1px;" />
+<line x1="159.25" y1="103.5" x2="159.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="159.25" y1="135.5" x2="159.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="159.25" y1="103.5" x2="259.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="259.25" y1="135.5" x2="259.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="259.25" y1="167.5" x2="259.25" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="259.25" y1="199.5" x2="259.25" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="259.25" y1="231.5" x2="259.25" y2="256.0" style="stroke:black; stroke-width:1px;" />
+<line x1="259.25" y1="263.5" x2="259.25" y2="288.0" style="stroke:black; stroke-width:1px;" />
+<rect x="124.25" y="32.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="126" y="41" style="font-family:sans-serif;font-size:10px;">
+expressaoOu
+</text>
+<rect x="15.75" y="192.0" width="87.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="17" y="201" style="font-family:sans-serif;font-size:10px;">
+expressaoUnaria
+</text>
+<rect x="14.75" y="128.0" width="89.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="16" y="137" style="font-family:sans-serif;font-size:10px;">
+expressaoAditiva
+</text>
+<rect x="110.75" y="128.0" width="97.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="112" y="137" style="font-family:sans-serif;font-size:10px;">
+operadorRelacional
+</text>
+<rect x="240.25" y="288.0" width="38.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="242" y="297" style="font-family:sans-serif;font-size:10px;">
+dammë
+</text>
+<rect x="71.0" y="288.0" width="31.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="73" y="297" style="font-family:sans-serif;font-size:10px;">
+botao
+</text>
+<rect x="131.25" y="0.0" width="56.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="133" y="9" style="font-family:sans-serif;font-size:10px;">
+expressao
+</text>
+<rect x="201.25" y="160.0" width="116.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="203" y="169" style="font-family:sans-serif;font-size:10px;">
+expressaoMultiplicativa
+</text>
+<rect x="12.25" y="224.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="14" y="233" style="font-family:sans-serif;font-size:10px;">
+expressaoPrimaria
+</text>
+<rect x="151.25" y="160.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="153" y="169" style="font-family:sans-serif;font-size:10px;">
+==
+</text>
+<rect x="212.25" y="224.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="214" y="233" style="font-family:sans-serif;font-size:10px;">
+expressaoPrimaria
+</text>
+<rect x="244.75" y="256.0" width="29.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="246" y="265" style="font-family:sans-serif;font-size:10px;">
+literal
+</text>
+<rect x="106.75" y="96.0" width="105.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="108" y="105" style="font-family:sans-serif;font-size:10px;">
+expressaoRelacional
+</text>
+<rect x="214.75" y="128.0" width="89.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="216" y="137" style="font-family:sans-serif;font-size:10px;">
+expressaoAditiva
+</text>
+<rect x="1.25" y="160.0" width="116.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3" y="169" style="font-family:sans-serif;font-size:10px;">
+expressaoMultiplicativa
+</text>
+<rect x="215.75" y="192.0" width="87.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="217" y="201" style="font-family:sans-serif;font-size:10px;">
+expressaoUnaria
+</text>
+<rect x="42.75" y="256.0" width="33.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="44" y="265" style="font-family:sans-serif;font-size:10px;">
+leitura
+</text>
+<rect x="128.25" y="64.0" width="62.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="130" y="73" style="font-family:sans-serif;font-size:10px;">
+expressaoE
+</text>
+<rect x="0.0" y="288.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2" y="297" style="font-family:sans-serif;font-size:10px;">
+mapa_duimë
+</text>

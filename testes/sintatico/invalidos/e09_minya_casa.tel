@@ -1,0 +1,5 @@
+// Objetivo: minya casa {}: casa é identificador, não marcador (seções 22.8 e 26.2).
+// Esperado: erro sintático.
+hauda cava {}
+minya casa {}
+vola cava {}

@@ -1,0 +1,8 @@
+// Objetivo: segunda sequência de blocos no mesmo arquivo (seção 22.8).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {}
+vola cava {}
+hauda cava {}
+minya cava {}
+vola cava {}

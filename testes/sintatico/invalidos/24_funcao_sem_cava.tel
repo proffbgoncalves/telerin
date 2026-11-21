@@ -1,0 +1,7 @@
+// Objetivo: o corpo da função é um bloco cava { } (seção 17).
+// Esperado: erro sintático em "{" na linha 4.
+hauda cava {}
+car aba_car f() {
+}
+minya cava {}
+vola cava {}

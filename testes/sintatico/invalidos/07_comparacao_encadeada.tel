@@ -1,0 +1,7 @@
+// Objetivo: comparações não encadeiam (seção 9).
+// Esperado: erro sintático no segundo "<" da linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    né_lambë r = a < b < c;
+}

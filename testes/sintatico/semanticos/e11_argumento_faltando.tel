@@ -1,0 +1,12 @@
+// Objetivo: somar(1) com somar de dois parâmetros (seção 26.3). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+car canat_min somar(canat_min primeiro, canat_min segundo) cava {
+    auta primeiro + segundo;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    canat_min valor = somar(1);
+}

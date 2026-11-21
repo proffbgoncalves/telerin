@@ -1,0 +1,9 @@
+// Objetivo: pino numérico no lugar do identificador (seção 22.8).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    duimë_dammë n = mapa_duimë 2;
+}

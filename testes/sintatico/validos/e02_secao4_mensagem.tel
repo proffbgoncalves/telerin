@@ -1,0 +1,10 @@
+// Objetivo: exemplo com impressão de mensagem da seção 4.
+// Esperado: árvore sem erro.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    ela pet_lanca "Ola";
+    ela lúmë_dammë lúmë(1, 1);
+}

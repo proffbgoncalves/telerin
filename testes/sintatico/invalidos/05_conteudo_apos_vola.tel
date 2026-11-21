@@ -1,0 +1,6 @@
+// Objetivo: nada pode vir depois de vola, só o fim do arquivo (seção 22).
+// Esperado: erro sintático em "canat" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {}
+canat extra = 1;

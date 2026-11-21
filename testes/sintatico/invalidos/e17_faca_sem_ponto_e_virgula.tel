@@ -1,0 +1,9 @@
+// Objetivo: vola_car cava {} vola_né aba_né sem ";" (seção 26.2).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    vola_car cava {} vola_né aba_né
+}

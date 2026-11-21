@@ -1,0 +1,10 @@
+// Objetivo: cava né_cava contador > 0 {} (seção 4.1).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    canat contador = 1;
+    cava né_cava contador > 0 {}
+}

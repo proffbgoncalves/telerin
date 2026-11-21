@@ -1,0 +1,11 @@
+// Objetivo: mapa_duimë(botao) (seções 10.4 e 22.8).
+// Esperado: erro sintático.
+hauda cava {
+    leper_mapa botao = leper(2);
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    duimë_dammë n = mapa_duimë(botao);
+}

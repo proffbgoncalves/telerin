@@ -1,0 +1,5 @@
+// Objetivo: cava vem depois de minya, não antes.
+// Esperado: erro sintático em "cava" na linha 4.
+hauda cava {}
+cava minya {}
+vola cava {}

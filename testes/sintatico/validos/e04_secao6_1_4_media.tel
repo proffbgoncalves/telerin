@@ -1,0 +1,12 @@
+// Objetivo: exemplo comparado de duinë da seção 6.1.4.
+// Esperado: árvore sem erro.
+hauda cava {}
+car duinë media(duinë primeiro, duinë segundo) cava {
+    auta (primeiro + segundo) / 2.0; // Divisão em ponto flutuante.
+}
+minya cava {
+    minya_lambë 9600;
+    duinë temperatura = media(21.5, 22.5); // Recebe 22.0.
+    ela pet_lanca temperatura; // Imprime 22.00 e LF.
+}
+vola cava {}

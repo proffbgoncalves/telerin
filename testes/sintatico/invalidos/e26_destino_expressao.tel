@@ -1,0 +1,11 @@
+// Objetivo: destino de han que é expressão (seção 22.8).
+// Esperado: erro sintático.
+hauda cava {
+    duinë_car motor = leper(3) : 0;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    ela car_duinë 128 han motor + 1;
+}

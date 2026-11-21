@@ -1,0 +1,7 @@
+// Objetivo: o corpo do né_cava é um bloco cava { } (seção 11).
+// Esperado: erro sintático em "ela" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    né_cava né ela pet_lanca 1;
+}

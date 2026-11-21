@@ -1,0 +1,4 @@
+// Objetivo: o menor programa completo (seção 4): hauda, minya e vola, cada
+// um com cava e bloco vazio, seguidos do fim do arquivo.
+// Esperado: árvore sem erro.
+hauda cava {} minya cava {} vola cava {}

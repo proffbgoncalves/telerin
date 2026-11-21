@@ -1,0 +1,7 @@
+// Objetivo: o número do pino é um numeral, não uma expressão (seção 19).
+// Esperado: erro sintático em "+" na linha 4.
+hauda cava {
+    leper_car led = leper(10 + 3);
+}
+minya cava {}
+vola cava {}

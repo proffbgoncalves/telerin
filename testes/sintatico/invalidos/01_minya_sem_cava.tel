@@ -1,0 +1,5 @@
+// Objetivo: todo bloco começa com cava (seção 4.1).
+// Esperado: erro sintático em "{" na linha 4.
+hauda cava {}
+minya {}
+vola cava {}

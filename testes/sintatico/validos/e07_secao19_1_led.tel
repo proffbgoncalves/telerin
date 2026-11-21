@@ -1,0 +1,7 @@
+// Objetivo: paralelo com Arduino da seção 19.1.
+// Esperado: árvore sem erro.
+hauda cava {
+    leper_car led = leper(13) : dammë;
+}
+minya cava {}
+vola cava { ela car_duimë duimë han led; }

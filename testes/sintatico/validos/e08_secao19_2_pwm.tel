@@ -1,0 +1,26 @@
+// Objetivo: exemplo integrado de leitura e PWM da seção 19.2.
+// Esperado: árvore sem erro.
+hauda cava {
+    leper_duimë botao = leper(2);
+    duinë_mapa sensor = leper_duinë(0);
+    duinë_car motor = leper(3) : 0;
+}
+car aba_car ajustar(duinë_car saida, canat_min intensidade) cava {
+    ela car_duinë intensidade han saida;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    canat_min<16> leitura = mapa_duinë sensor;
+    canat_min potencia = canat_min(leitura / 4);
+    né_cava mapa_duimë botao == dammë cava {
+        ela ajustar(motor, potencia);
+    } heco cava {
+        ela ajustar(motor, 0);
+    }
+    né_cava mapa han recebido cava {
+        ela pet_min recebido;
+    }
+    ela lúmë_dammë lúmë(1, 100);
+}

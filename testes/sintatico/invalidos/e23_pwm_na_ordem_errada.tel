@@ -1,0 +1,11 @@
+// Objetivo: ela car_duinë motor 128; (seções 10.4 e 26.2).
+// Esperado: erro sintático.
+hauda cava {
+    duinë_car motor = leper(3) : 0;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    ela car_duinë motor 128;
+}

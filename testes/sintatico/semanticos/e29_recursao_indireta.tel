@@ -1,0 +1,13 @@
+// Objetivo: recursão indireta entre duas funções (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+car canat a() cava {
+    auta b();
+}
+car canat b() cava {
+    auta a();
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {}

@@ -1,0 +1,9 @@
+// Objetivo: [] como lista vetorial (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    [canat_min; 1] v = [];
+}

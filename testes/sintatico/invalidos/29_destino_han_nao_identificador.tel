@@ -1,0 +1,7 @@
+// Objetivo: o destino de han é só identificador (seção 10).
+// Esperado: erro sintático em "[" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    ela car_duimë duimë han leds[0];
+}

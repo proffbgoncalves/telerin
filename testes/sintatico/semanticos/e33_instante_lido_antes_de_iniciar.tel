@@ -1,0 +1,9 @@
+// Objetivo: instante global lido antes de inicializado (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+lúmë<lúmë_min> inicio;
+minya cava {
+    lúmë d = lúmë_min - inicio;
+    inicio = lúmë_min;
+}
+vola cava {}

@@ -1,0 +1,9 @@
+// Objetivo: x = y = 1; (seção 9).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    x = y = 1;
+}

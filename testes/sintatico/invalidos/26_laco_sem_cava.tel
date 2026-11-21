@@ -1,0 +1,7 @@
+// Objetivo: o corpo de vola_né é um bloco cava { } (seção 13).
+// Esperado: erro sintático em "{" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    vola_né né {}
+}

@@ -1,0 +1,9 @@
+// Objetivo: o corpo de car_min é um bloco cava { } (seção 12).
+// Esperado: erro sintático em "{" na linha 7.
+hauda cava {}
+minya cava {}
+vola cava {
+    car_heco 1 cava {
+        car_min 1 {}
+    }
+}

@@ -1,0 +1,9 @@
+// Objetivo: saída digital sem valor inicial (seção 22.8). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {
+    leper_car led = leper(13);
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {}

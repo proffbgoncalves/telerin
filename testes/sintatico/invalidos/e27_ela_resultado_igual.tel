@@ -1,0 +1,9 @@
+// Objetivo: ela resultado = 3; (seção 10.1.2).
+// Esperado: erro sintático.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    ela resultado = 3;
+}

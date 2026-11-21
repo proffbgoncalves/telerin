@@ -1,0 +1,7 @@
+// Objetivo: ela anuncia uma ação, não uma atribuição (seção 10).
+// Esperado: erro sintático em "=" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    ela resultado = 3;
+}

@@ -1,0 +1,7 @@
+// Objetivo: vola_delia exige os dois ";" (seção 14).
+// Esperado: erro sintático em ")" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    vola_delia (; né) cava {}
+}

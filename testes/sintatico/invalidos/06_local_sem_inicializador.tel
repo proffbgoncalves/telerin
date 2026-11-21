@@ -1,0 +1,7 @@
+// Objetivo: variável local exige inicializador (seção 8).
+// Esperado: erro sintático em ";" na linha 6.
+hauda cava {}
+minya cava {}
+vola cava {
+    canat_min valor;
+}

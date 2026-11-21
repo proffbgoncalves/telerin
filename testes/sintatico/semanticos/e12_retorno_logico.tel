@@ -1,0 +1,10 @@
+// Objetivo: função canat_min que retorna né (seção 26.3). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+car canat_min obter() cava {
+    auta né;
+}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {}

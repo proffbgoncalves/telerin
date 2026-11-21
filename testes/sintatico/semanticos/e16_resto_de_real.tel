@@ -1,0 +1,9 @@
+// Objetivo: duinë valor = 5.0 % 2.0; (seção 26.3). O erro é semântico; a sintaxe está correta.
+// Esperado: o parser aceita e imprime a árvore.
+hauda cava {}
+minya cava {
+    minya_lambë 9600;
+}
+vola cava {
+    duinë valor = 5.0 % 2.0;
+}
