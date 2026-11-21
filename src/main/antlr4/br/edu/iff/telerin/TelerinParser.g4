@@ -96,11 +96,53 @@ itemBloco
     : declaracaoLocal
     ;
 
-// Expressões (forma provisória)
+// Expressões, da menor para a maior precedência
 
 expressao
+    : expressaoOu
+    ;
+
+expressaoOu
+    : expressaoE (OR expressaoE)*
+    ;
+
+expressaoE
+    : expressaoRelacional (AND expressaoRelacional)*
+    ;
+
+// '?' em vez de '*': comparações não encadeiam (a < b < c é erro).
+expressaoRelacional
+    : expressaoAditiva (operadorRelacional expressaoAditiva)?
+    ;
+
+operadorRelacional
+    : LT | LE | GT | GE | EQ | NE
+    ;
+
+expressaoAditiva
+    : expressaoMultiplicativa ((PLUS | MINUS) expressaoMultiplicativa)*
+    ;
+
+expressaoMultiplicativa
+    : expressaoUnaria ((STAR | SLASH | PERCENT) expressaoUnaria)*
+    ;
+
+expressaoUnaria
+    : (NOT | MINUS) expressaoUnaria
+    | expressaoPrimaria
+    ;
+
+expressaoPrimaria
     : literal
+    | acessoVetor
+    | chamada
     | ID
+    | conversao
+    | operacaoBits
+    | duracao
+    | leitura
+    | listaVetor
+    | LPAREN expressao RPAREN
     ;
 
 literal
@@ -111,4 +153,41 @@ literal
     | FALSE
     | HIGH
     | LOW
+    ;
+
+acessoVetor
+    : ID LBRACKET expressao RBRACKET
+    ;
+
+chamada
+    : ID LPAREN listaArgumentos? RPAREN
+    ;
+
+listaArgumentos
+    : expressao (COMMA expressao)*
+    ;
+
+conversao
+    : tipoNumerico LPAREN expressao RPAREN
+    ;
+
+operacaoBits
+    : (BIT_AND | BIT_OR | BIT_XOR | SHIFT_LEFT | SHIFT_RIGHT)
+          largura LPAREN expressao COMMA expressao RPAREN
+    | BIT_NOT largura LPAREN expressao RPAREN
+    ;
+
+duracao
+    : TIME_TYPE LPAREN INT_LITERAL COMMA INT_LITERAL RPAREN
+    ;
+
+leitura
+    : DIGITAL_READ ID
+    | ANALOG_READ ID
+    | SERIAL_READ
+    | MILLIS
+    ;
+
+listaVetor
+    : LBRACKET listaArgumentos? RBRACKET
     ;
