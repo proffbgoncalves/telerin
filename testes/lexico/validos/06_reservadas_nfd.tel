@@ -1,5 +1,2 @@
-// Objetivo: reservadas digitadas em NFD (letra + acento combinante)
-// são reconhecidas depois da normalização NFC (seção 5.1).
-// Esperado: BOOL_TYPE, TRUE e TIME_TYPE, sem erro.
 né_lambë x = né;
 lúmë t = lúmë(1, 2);

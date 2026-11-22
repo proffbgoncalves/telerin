@@ -1,5 +1,3 @@
-// Objetivo: tokenizar o exemplo da seção 4 (reservadas acentuadas, número,
-// string e delimitadores). Esperado: nenhum erro léxico.
 hauda cava {}
 minya cava {
     minya_lambë 9600;

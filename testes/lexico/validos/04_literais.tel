@@ -1,6 +1,3 @@
-// Objetivo: literais inteiros, de ponto flutuante e strings (seções 5.2 e
-// 6.1.1). Esperado: 0xE+1 vira INT_LITERAL PLUS INT_LITERAL; o sinal
-// negativo é o operador MINUS; a string preserva escapes e acentos.
 0 7 255 0b1010 0xFF 0xE+1 -128
 1.5 0.25 1e+2 2E3 0.5e-3 3.0e10
 "Ola" "linha\n" "tab\t aspas\" barra\\ cr\r" "Olá, élfico þ"

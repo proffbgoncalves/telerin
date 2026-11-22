@@ -1,3 +1,1 @@
-// Objetivo: '@' não pertence a nenhum token (seção 26.1). Esperado: erro
-// léxico "caractere inválido '@'" com linha e coluna.
 canat_min valor = @;

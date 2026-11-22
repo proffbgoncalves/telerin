@@ -1,5 +1,2 @@
-﻿// Objetivo: BOM inicial descartado; CRLF e CR isolado contam como uma
-// quebra de linha cada (seção 21). Esperado: hauda em 4:1, minya em 5:1 e
-// vola em 6:1, sem erro.
-hauda cava {}minya cava {}
-vola cava {}
+﻿hauda cava {}
+minya cava {}vola cava {}

@@ -1,6 +1,2 @@
-// Objetivo: grafias parecidas com reservadas são identificadores (seções 5.1
-// e 23.1). Esperado: lume, tharma_min, volaSensor, casa, canat2, _interno,
-// __reservado, ação e nívelAlto viram ID; þarma_min e abá né continuam
-// reservadas (SHIFT_LEFT, NOT, TRUE); aba_né é um único token FALSE.
 lume tharma_min volaSensor casa canat2 _interno __reservado ação nívelAlto
 þarma_min abá né aba_né

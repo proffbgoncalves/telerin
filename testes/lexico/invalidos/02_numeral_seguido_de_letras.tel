@@ -1,3 +1,1 @@
-// Objetivo: 2contador não pode virar número + identificador (seção 26.1).
-// Esperado: erro léxico "numeral inválido '2contador'".
 canat_min 2contador = 1;
